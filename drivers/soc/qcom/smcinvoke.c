@@ -293,6 +293,12 @@ static struct smcinvoke_server_info *get_cb_server_locked(uint16_t server_id)
 	return server;
 }
 
+int qseecom_process_listener_from_smcinvoke(uint32_t *result,
+					u64 *response_type, unsigned int *data)
+{
+	return -EOPNOTSUPP;
+}
+
 static uint16_t next_cb_server_id_locked(void)
 {
 	if (g_last_cb_server_id == CBOBJ_SERVER_ID_END)
