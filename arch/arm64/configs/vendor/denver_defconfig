@@ -4608,6 +4608,12 @@ CONFIG_ION_POOL_FILL_MARK=100
 # CONFIG_MELLANOX_PLATFORM is not set
 
 #
+# Qualcomm Atheros CLD WLAN module
+#
+CONFIG_QCA_CLD_WLAN=y
+CONFIG_QCA_CLD_WLAN_PROFILE="default"
+
+#
 # Qualcomm technologies inc. MSM specific device drivers
 #
 CONFIG_MSM_EXT_DISPLAY=y
